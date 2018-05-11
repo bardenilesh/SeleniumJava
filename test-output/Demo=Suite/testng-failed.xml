@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo=Suite]">
+  <listeners>
+    <listener class-name="testng.AnnotationTransformer"/>
+  </listeners>
+  <test name="RetryMultiple(failed)">
+    <classes>
+      <class name="testng.Test002">
+        <methods>
+          <include name="Test1"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- testng.Test002 -->
+    </classes>
+  </test> <!-- RetryMultiple(failed) -->
+</suite> <!-- Failed suite [Demo=Suite] -->
