@@ -5,17 +5,27 @@ import org.testng.annotations.Test;
 
 public class Test001 {
 
-	@Test(retryAnalyzer = RetryAnalyzer.class)
+	@Test//(retryAnalyzer = RetryAnalyzer.class)
 	public void Test1()
 	{
-		System.out.println("Test1");
-		Assert.assertEquals(false, true);
+		try {
+			System.out.println("Test1");
+			Assert.assertEquals(false, true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Test
 	public void Test2()
 	{
-		System.out.println("Test2");
-		Assert.assertEquals(false, true);
+		try {
+			System.out.println("Test2");
+			Assert.assertEquals(false, true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

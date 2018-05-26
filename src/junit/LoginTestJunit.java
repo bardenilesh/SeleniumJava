@@ -3,7 +3,9 @@ package junit;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,13 +19,14 @@ public class LoginTestJunit {
 	String workDir= System.getProperty("user.dir");
 	WebDriverWait wait;
 
-	@Before
+	
+	@BeforeClass
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", workDir+"\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
-	@After
+	@AfterClass
 	public void tearDown() throws Exception {
 		driver.quit();
 	}

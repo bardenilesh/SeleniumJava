@@ -71,7 +71,7 @@ public class LoginTest {
 		
 		WebElement drop_ProductSort = driver.findElement(By.id("selectProductSort"));
 		new Select(drop_ProductSort).selectByVisibleText("Product Name: A to Z");
-		
+
 		WebElement img_Container = driver.findElement(By.xpath("//a[(@class='product-name') and contains (text(),'Blouse')]/ancestor::li"));
 		Actions action = new Actions(driver);
 		action.moveToElement(img_Container).build().perform();
