@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Demo=Suite]">
-  <listeners>
-    <listener class-name="testng.AnnotationTransformer"/>
-  </listeners>
-  <test name="RetryMultiple(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testng.Test002">
+      <class name="frames.Guru99Frames">
         <methods>
-          <include name="Test1"/>
-          <include name="Test2"/>
+          <include name="afterClass"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- testng.Test002 -->
-      <class name="testng.Test001">
-        <methods>
-          <include name="Test1"/>
-          <include name="Test2"/>
-        </methods>
-      </class> <!-- testng.Test001 -->
+      </class> <!-- frames.Guru99Frames -->
     </classes>
-  </test> <!-- RetryMultiple(failed) -->
-</suite> <!-- Failed suite [Demo=Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
